@@ -1,0 +1,97 @@
+/* Ctrl + F5 */
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+section div {
+    align-items: center;
+    background-color: white;
+    border-top: 15px solid greenyellow;
+    box-shadow: 0px 3px 6px black;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    padding: 5em;
+}
+
+div h1 {
+    color: rgb(130, 202, 21);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 29px;
+}
+
+div h2{
+    margin: 0;
+}
+
+div form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='text'],
+input[type='email'], select, textarea {
+    border: 1.5px solid rgb(130, 202, 21);
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 4px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus {
+    border-color: green;
+    outline: none;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(34, 226, 34);
+    box-shadow: none;
+    color: black;
+    height: 40px;
+    margin: 10px 0;
+    width: 100px;
+}
+
+input[type="submit"]:active, input[type="submit"]:hover{
+    background-color:  rgb(25, 187, 25);
+    cursor: pointer;
+}
+
+.em-3{
+    padding: 3em;
+}
+
+.divide{
+border: none;
+display: flex;
+flex-direction:row;
+margin: 10px 0 0 0;
+}
+
+.divideClass{
+align-items: center;
+box-shadow: none;
+border: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0 5em;
+}
+
+.b-esq{
+    border-left: 1px solid gray;
+}

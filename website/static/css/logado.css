@@ -1,0 +1,36 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0
+}
+
+nav{
+    align-content: center;
+    background-color: beige;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+nav a{
+    color: gray;
+    text-decoration: none;
+    margin: 0 7px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 29px;
+}
+

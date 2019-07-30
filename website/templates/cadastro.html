@@ -1,0 +1,35 @@
+{% extends 'shared/layout.html' %}
+{% block conteudo %}
+
+<h2>Cadastre-se</h2>
+{{msg}}
+<form action="/cadastro" method="post" class="divide">
+    {% csrf_token %}
+    <div class="divideClass">
+        <label>Nome</label>
+        <input type="text" name="nome" required>
+    
+        <label>Sobrenome</label>
+        <input type="text" name="sobrenome" required>
+        
+        <label>E-mail</label>
+        <input type="email" name="email" required>
+    </div>
+    <div class="divideClass b-esq">
+        <label for="">Gênero</label>
+        <select name="genero" required>
+            <option value="F">Feminino</option>
+            <option value="M">Masculino</option>
+            <option value="O">Outro</option>
+        </select>
+    
+        <label for="">Biografia</label>
+        <textarea name="biografia" cols="30" rows="10">
+        </textarea>
+
+        <input type="submit" value="Cadastrar">
+    </div>
+
+</form>
+
+{% endblock %}
